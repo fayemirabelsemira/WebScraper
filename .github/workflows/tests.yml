@@ -27,6 +27,18 @@ jobs:
           python -m pip install --upgrade pip
           pip install -r requirements.txt
 
+      - name: Generate test data
+        run: |
+          python scraper.py scrape --max-pages 1
+
+      - name: Create database import test file
+        run: |
+          cat > data/test_books.csv << 'EOF'
+          title,price,rating,availability,url
+          Test Book One,10.99,5,In stock,https://example.com/book-one
+          Test Book Two,15.50,4,In stock,https://example.com/book-two
+          EOF
+
       - name: Run tests
         run: |
           pytest
