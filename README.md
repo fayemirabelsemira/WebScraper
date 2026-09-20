@@ -2,8 +2,6 @@
 
 A professional Python web scraper that extracts book information from **Books to Scrape** and processes the data through parsing, cleaning, analysis, database storage, exporting, reporting, and testing.
 
----
-
 ## Features
 
 - Web scraping using `requests`
