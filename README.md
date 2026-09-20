@@ -26,8 +26,6 @@ A professional Python web scraper that extracts book information from **Books to
 - Advanced automated testing
 - Report generation
 
----
-
 ## Project Structure
 
 ```text
@@ -83,8 +81,6 @@ WebScraper/
 └── README.md
 ````
 
----
-
 ## Requirements
 
 * Python 3.10 or higher
@@ -92,8 +88,6 @@ WebScraper/
 * BeautifulSoup4
 * Python-dotenv
 * Pytest
-
----
 
 ## Installation
 
@@ -119,8 +113,6 @@ source .venv/bin/activate
 pip install -r requirements.txt
 ```
 
----
-
 ## Configuration
 
 The project uses environment variables for configuration.
@@ -138,8 +130,6 @@ DEFAULT_MAX_PAGES=50
 
 The `.env` file should not be committed to Git.
 
----
-
 ## Running the Scraper
 
 Run the main scraper:
@@ -155,8 +145,6 @@ Example:
 ```bash
 python3 scraper.py scrape --max-pages 5
 ```
-
----
 
 ## Output Formats
 
@@ -177,8 +165,6 @@ python3 scraper.py scrape --format json
 ```bash
 python3 scraper.py scrape --format both
 ```
-
----
 
 ## Filtering
 
@@ -205,8 +191,6 @@ python3 scraper.py scrape --rating 5
 ```bash
 python3 scraper.py scrape --min-price 10 --max-price 30 --rating 5
 ```
-
----
 
 ## Database
 
@@ -246,8 +230,6 @@ python3 scraper.py database --export-db
 python3 scraper.py database --import-db data/books.csv
 ```
 
----
-
 ## Searching the Database
 
 ### Search by title
@@ -274,8 +256,6 @@ python3 scraper.py database --sort price
 python3 scraper.py database --sort price --descending
 ```
 
----
-
 ## Logging
 
 The scraper uses Python's logging system.
@@ -293,7 +273,6 @@ The logger supports:
 * Log levels
 * Rotating log files
 
----
 
 ## Testing
 
@@ -328,8 +307,6 @@ The project contains automated tests covering:
 * Scraping pipeline
 * Report generation
 
----
-
 ## Technologies Used
 
 * Python
@@ -342,8 +319,6 @@ The project contains automated tests covering:
 * Python Logging
 * Python-dotenv
 
----
-
 ## Data Source
 
 This project uses:
@@ -355,8 +330,6 @@ https://books.toscrape.com/
 ```
 
 Books to Scrape is a website designed for practicing web scraping.
-
----
 
 ## Project Goals
 
@@ -376,8 +349,6 @@ This project demonstrates practical Python development skills including:
 * Command-line application development
 * Python project packaging
 
----
-
 ## Testing Status
 
 The project currently passes the complete automated test suite.
@@ -387,8 +358,6 @@ Latest test result:
 ```text
 96 passed in 5.85s
 ```
-
----
 
 ## License
 
